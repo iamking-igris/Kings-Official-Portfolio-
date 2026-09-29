@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+<rect width="1600" height="900" fill="#f7f5f0"/>
+<rect x="0" y="0" width="1600" height="68" fill="#fff" stroke="#e8e4dc"/>
+<text x="48" y="42" fill="#121212" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="1">FANECTO</text>
+<text x="1280" y="42" fill="#666" font-family="system-ui,sans-serif" font-size="12">Find Accommodation</text>
+<text x="80" y="160" fill="#121212" font-family="Georgia,serif" font-size="48">Find your place.</text>
+<text x="80" y="220" fill="#666" font-family="system-ui,sans-serif" font-size="16">Verified agents · landlords · properties · inspectors</text>
+<!-- steps -->
+<text x="80" y="290" fill="#999" font-family="system-ui,sans-serif" font-size="11" letter-spacing="2">01 DISCOVER</text>
+<text x="280" y="290" fill="#999" font-family="system-ui,sans-serif" font-size="11" letter-spacing="2">02 VERIFY</text>
+<text x="460" y="290" fill="#999" font-family="system-ui,sans-serif" font-size="11" letter-spacing="2">03 INSPECT</text>
+<text x="660" y="290" fill="#999" font-family="system-ui,sans-serif" font-size="11" letter-spacing="2">04 PAY &#38; SETTLE</text>
+<!-- cards -->
+<g>
+  <rect x="80" y="340" width="460" height="480" rx="10" fill="#fff" stroke="#e0dcd3"/>
+  <rect x="80" y="340" width="460" height="220" fill="#e8e4dc"/>
+  <rect x="100" y="370" width="70" height="22" rx="11" fill="#121212"/>
+  <text x="112" y="385" fill="#f3f1ec" font-family="system-ui,sans-serif" font-size="10">Verified</text>
+  <text x="110" y="600" fill="#121212" font-family="system-ui,sans-serif" font-size="18" font-weight="600">2 Bedroom Apartment</text>
+  <text x="110" y="630" fill="#888" font-family="system-ui,sans-serif" font-size="13">Malete · near campus</text>
+  <text x="110" y="680" fill="#121212" font-family="system-ui,sans-serif" font-size="22">&#8358;500,000 /year</text>
+  <text x="110" y="720" fill="#aaa" font-family="system-ui,sans-serif" font-size="11">CAC Agent · Property Verified · Inspection</text>
+</g>
+<g>
+  <rect x="570" y="340" width="460" height="480" rx="10" fill="#fff" stroke="#e0dcd3"/>
+  <rect x="570" y="340" width="460" height="220" fill="#ded9d0"/>
+  <rect x="590" y="370" width="70" height="22" rx="11" fill="#121212"/>
+  <text x="602" y="385" fill="#f3f1ec" font-family="system-ui,sans-serif" font-size="10">Verified</text>
+  <text x="600" y="600" fill="#121212" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Self Contain Room</text>
+  <text x="600" y="630" fill="#888" font-family="system-ui,sans-serif" font-size="13">Malete · 5 mins to campus</text>
+  <text x="600" y="680" fill="#121212" font-family="system-ui,sans-serif" font-size="22">&#8358;250,000 /year</text>
+  <text x="600" y="720" fill="#aaa" font-family="system-ui,sans-serif" font-size="11">Verified Landlord · Inspection Available</text>
+</g>
+<g>
+  <rect x="1060" y="340" width="460" height="480" rx="10" fill="#fff" stroke="#e0dcd3"/>
+  <rect x="1060" y="340" width="460" height="220" fill="#d4cfc5"/>
+  <rect x="1080" y="370" width="70" height="22" rx="11" fill="#121212"/>
+  <text x="1092" y="385" fill="#f3f1ec" font-family="system-ui,sans-serif" font-size="10">Verified</text>
+  <text x="1090" y="600" fill="#121212" font-family="system-ui,sans-serif" font-size="18" font-weight="600">3 Bedroom Shared</text>
+  <text x="1090" y="630" fill="#888" font-family="system-ui,sans-serif" font-size="13">Tanke · near campus</text>
+  <text x="1090" y="680" fill="#121212" font-family="system-ui,sans-serif" font-size="22">&#8358;750,000 /year</text>
+  <text x="1090" y="720" fill="#aaa" font-family="system-ui,sans-serif" font-size="11">CAC Agent · Property Verified</text>
+</g>
+</svg>

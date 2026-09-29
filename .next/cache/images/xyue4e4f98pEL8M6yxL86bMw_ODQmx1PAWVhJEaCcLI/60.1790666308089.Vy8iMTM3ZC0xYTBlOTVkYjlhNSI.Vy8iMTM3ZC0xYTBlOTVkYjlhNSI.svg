@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="igris-bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1113"/>
+      <stop offset="1" stop-color="#1A1A1D"/>
+    </linearGradient>
+    <linearGradient id="igris-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#EDE8DF"/>
+      <stop offset="1" stop-color="#B7B1A8"/>
+    </linearGradient>
+    <radialGradient id="igris-orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1290 180) rotate(108) scale(420 420)">
+      <stop stop-color="#33363A"/>
+      <stop offset="1" stop-color="#17181A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#igris-bg)"/>
+  <rect width="1600" height="900" fill="url(#igris-orb)"/>
+
+  <rect x="0" y="0" width="1600" height="66" fill="#121416" fill-opacity="0.9"/>
+  <text x="64" y="42" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="4">IGRIS TECH</text>
+  <text x="1186" y="42" fill="#ADA8A1" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">WORK</text>
+  <text x="1278" y="42" fill="#ADA8A1" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">ABOUT</text>
+  <text x="1367" y="42" fill="#ADA8A1" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">CONTACT</text>
+
+  <g opacity="0.7">
+    <path d="M220 234H633" stroke="#2E3135" stroke-width="1"/>
+    <path d="M963 234H1378" stroke="#2E3135" stroke-width="1"/>
+  </g>
+
+  <text x="86" y="202" fill="#F3F1EC" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="400">We build</text>
+  <text x="86" y="280" fill="#F3F1EC" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="400">what&apos;s next.</text>
+  <text x="86" y="342" fill="#A6A09A" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="0.4">Digital products · software · AI systems</text>
+
+  <g>
+    <rect x="86" y="390" width="164" height="42" rx="2" fill="#F3F1EC"/>
+    <text x="116" y="417" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2">EXPLORE</text>
+  </g>
+
+  <g>
+    <rect x="85" y="530" width="425" height="255" rx="8" fill="#17191B" stroke="#2F343A"/>
+    <text x="110" y="575" fill="#8A837B" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3">01 / WEB</text>
+    <path d="M110 610H300" stroke="#2C2F33" stroke-width="1"/>
+    <text x="110" y="650" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600">Web products</text>
+    <text x="110" y="686" fill="#8E8A84" font-family="Arial, Helvetica, sans-serif" font-size="13">Brand systems, interfaces, and growth surfaces</text>
+    <rect x="110" y="714" width="160" height="30" rx="15" fill="#F3F1EC" fill-opacity="0.08"/>
+    <text x="142" y="734" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">VIEW WORK</text>
+  </g>
+
+  <g>
+    <rect x="560" y="530" width="425" height="255" rx="8" fill="#17191B" stroke="#2F343A"/>
+    <text x="585" y="575" fill="#8A837B" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3">02 / SOFTWARE</text>
+    <path d="M585 610H775" stroke="#2C2F33" stroke-width="1"/>
+    <text x="585" y="650" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600">Systems</text>
+    <text x="585" y="686" fill="#8E8A84" font-family="Arial, Helvetica, sans-serif" font-size="13">Custom infrastructure, APIs, and backend logic</text>
+    <rect x="585" y="714" width="180" height="30" rx="15" fill="#F3F1EC" fill-opacity="0.08"/>
+    <text x="621" y="734" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">BUILD FLOW</text>
+  </g>
+
+  <g>
+    <rect x="1035" y="530" width="425" height="255" rx="8" fill="#17191B" stroke="#2F343A"/>
+    <text x="1060" y="575" fill="#8A837B" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3">03 / AI</text>
+    <path d="M1060 610H1250" stroke="#2C2F33" stroke-width="1"/>
+    <text x="1060" y="650" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600">Automation</text>
+    <text x="1060" y="686" fill="#8E8A84" font-family="Arial, Helvetica, sans-serif" font-size="13">AI workflows built to help products compound</text>
+    <rect x="1060" y="714" width="178" height="30" rx="15" fill="#F3F1EC" fill-opacity="0.08"/>
+    <text x="1094" y="734" fill="#F3F1EC" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">INTELLIGENT</text>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="1260" cy="240" r="130" fill="url(#igris-accent)" fill-opacity="0.08"/>
+    <circle cx="1326" cy="204" r="20" fill="#EDE8DF" fill-opacity="0.7"/>
+  </g>
+</svg>

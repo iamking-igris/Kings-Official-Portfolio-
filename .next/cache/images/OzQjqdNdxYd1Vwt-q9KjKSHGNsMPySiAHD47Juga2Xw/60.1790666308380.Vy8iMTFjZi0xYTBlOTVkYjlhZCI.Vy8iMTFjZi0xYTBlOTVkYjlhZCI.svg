@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="file-bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0D10"/>
+      <stop offset="1" stop-color="#14181D"/>
+    </linearGradient>
+    <linearGradient id="file-panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#171C21"/>
+      <stop offset="1" stop-color="#0F1216"/>
+    </linearGradient>
+    <linearGradient id="file-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8AC7B7" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#5FD3FF" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#file-bg)"/>
+  <rect x="0" y="0" width="1600" height="56" fill="#101418"/>
+  <text x="64" y="36" fill="#EFF2F5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3">FILE INTELLIGENCE API</text>
+  <text x="1345" y="36" fill="#8A8F95" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">V1 / DOCS</text>
+
+  <g opacity="0.28">
+    <circle cx="1210" cy="246" r="260" fill="url(#file-glow)"/>
+    <circle cx="1268" cy="300" r="154" fill="url(#file-glow)"/>
+  </g>
+
+  <g>
+    <rect x="58" y="96" width="700" height="734" rx="16" fill="url(#file-panel)" stroke="#2A3138"/>
+    <text x="90" y="142" fill="#8A9199" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3">INPUT</text>
+    <text x="90" y="184" fill="#F5F7F8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600">Upload or send a file</text>
+
+    <rect x="90" y="220" width="636" height="186" rx="14" fill="#0D1115" stroke="#303840" stroke-dasharray="9 9"/>
+    <circle cx="470" cy="312" r="52" fill="#141A20" stroke="#2B353D"/>
+    <path d="M444 312L462 330L496 290" stroke="#EAF0F3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <text x="345" y="408" fill="#7C858D" font-family="Arial, Helvetica, sans-serif" font-size="14">Drop PDF, DOCX, or image here</text>
+
+    <text x="90" y="490" fill="#8A9199" font-family="Courier New, monospace" font-size="13">POST /v1/extract</text>
+    <rect x="90" y="520" width="228" height="14" rx="7" fill="#1E252C"/>
+    <rect x="90" y="548" width="462" height="14" rx="7" fill="#1A2025"/>
+    <rect x="90" y="576" width="334" height="14" rx="7" fill="#1A2025"/>
+
+    <g>
+      <rect x="90" y="650" width="165" height="42" rx="8" fill="#F5F7F8"/>
+      <text x="138" y="678" fill="#0B0D10" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">RUN EXTRACT</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="842" y="96" width="700" height="734" rx="16" fill="url(#file-panel)" stroke="#2A3138"/>
+    <text x="878" y="142" fill="#8A9199" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="3">STRUCTURED OUTPUT</text>
+    <text x="878" y="184" fill="#F5F7F8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600">Machine-readable insight</text>
+
+    <rect x="878" y="222" width="626" height="522" rx="14" fill="#0D1115" stroke="#2D363D"/>
+    <text x="914" y="270" fill="#7ED0A8" font-family="Courier New, monospace" font-size="13">{</text>
+    <text x="938" y="300" fill="#A6C7F4" font-family="Courier New, monospace" font-size="13">&quot;document_type&quot;: &quot;invoice&quot;,</text>
+    <text x="938" y="332" fill="#A6C7F4" font-family="Courier New, monospace" font-size="13">&quot;fields&quot;: {</text>
+    <text x="962" y="364" fill="#F0D4A7" font-family="Courier New, monospace" font-size="13">&quot;vendor&quot;: &quot;BluePeak Logistics&quot;,</text>
+    <text x="962" y="396" fill="#F0D4A7" font-family="Courier New, monospace" font-size="13">&quot;total&quot;: &quot;₦1,240,500&quot;,</text>
+    <text x="962" y="428" fill="#F0D4A7" font-family="Courier New, monospace" font-size="13">&quot;currency&quot;: &quot;NGN&quot;</text>
+    <text x="938" y="460" fill="#A6C7F4" font-family="Courier New, monospace" font-size="13">},</text>
+    <text x="938" y="492" fill="#A6C7F4" font-family="Courier New, monospace" font-size="13">&quot;confidence&quot;: 0.97</text>
+    <text x="914" y="524" fill="#7ED0A8" font-family="Courier New, monospace" font-size="13">}</text>
+
+    <rect x="880" y="580" width="186" height="32" rx="16" fill="#DFF6ED" fill-opacity="0.08"/>
+    <text x="906" y="601" fill="#DFF6ED" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">STABLE SCHEMA</text>
+  </g>
+</svg>

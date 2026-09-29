@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="fanecto-bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F1EA"/>
+      <stop offset="1" stop-color="#E7E1D6"/>
+    </linearGradient>
+    <linearGradient id="fanecto-card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FDFCFB"/>
+      <stop offset="1" stop-color="#E8E0D2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#fanecto-bg)"/>
+  <rect x="0" y="0" width="1600" height="68" fill="#F8F5F0" stroke="#E7E0D7"/>
+  <text x="68" y="42" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="3">FANECTO</text>
+  <text x="1238" y="42" fill="#6F6963" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5">FIND ACCOMMODATION</text>
+
+  <g opacity="0.9">
+    <circle cx="1308" cy="218" r="180" fill="#D6CFC1"/>
+    <circle cx="1410" cy="320" r="96" fill="#F0E8DF"/>
+  </g>
+
+  <text x="84" y="170" fill="#121212" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="400">Find your place</text>
+  <text x="84" y="228" fill="#121212" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="400">with confidence.</text>
+  <text x="84" y="290" fill="#5F5A56" font-family="Arial, Helvetica, sans-serif" font-size="16">Verified listings · trusted agents · simple settlement</text>
+
+  <g>
+    <rect x="84" y="328" width="146" height="34" rx="17" fill="#121212"/>
+    <text x="112" y="350" fill="#F5F1EA" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">DISCOVER</text>
+  </g>
+
+  <g>
+    <rect x="246" y="328" width="146" height="34" rx="17" fill="#E4DDD1"/>
+    <text x="280" y="350" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">VERIFY</text>
+  </g>
+
+  <g>
+    <rect x="408" y="328" width="146" height="34" rx="17" fill="#E4DDD1"/>
+    <text x="440" y="350" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">INSPECT</text>
+  </g>
+
+  <g>
+    <rect x="570" y="328" width="200" height="34" rx="17" fill="#E4DDD1"/>
+    <text x="606" y="350" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">PAY &amp; SETTLE</text>
+  </g>
+
+  <g>
+    <rect x="84" y="398" width="430" height="440" rx="18" fill="url(#fanecto-card)" stroke="#D7D0C4"/>
+    <rect x="84" y="398" width="430" height="220" fill="#D8D1C5"/>
+    <rect x="114" y="428" width="104" height="28" rx="14" fill="#121212"/>
+    <text x="136" y="446" fill="#F5F1EA" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">VERIFIED</text>
+    <rect x="104" y="668" width="180" height="12" rx="6" fill="#D0C8BE"/>
+    <rect x="104" y="692" width="240" height="12" rx="6" fill="#D0C8BE"/>
+    <text x="106" y="625" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">2 Bed Apartment</text>
+    <text x="106" y="650" fill="#5E5954" font-family="Arial, Helvetica, sans-serif" font-size="13">Malete · Near campus</text>
+    <text x="106" y="760" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">₦500,000</text>
+    <text x="106" y="788" fill="#6F6963" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2">PER YEAR</text>
+  </g>
+
+  <g>
+    <rect x="560" y="398" width="430" height="440" rx="18" fill="url(#fanecto-card)" stroke="#D7D0C4"/>
+    <rect x="560" y="398" width="430" height="220" fill="#CFC7BC"/>
+    <rect x="590" y="428" width="104" height="28" rx="14" fill="#121212"/>
+    <text x="612" y="446" fill="#F5F1EA" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">VERIFIED</text>
+    <rect x="580" y="668" width="180" height="12" rx="6" fill="#D0C8BE"/>
+    <rect x="580" y="692" width="240" height="12" rx="6" fill="#D0C8BE"/>
+    <text x="582" y="625" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Self-Contain Room</text>
+    <text x="582" y="650" fill="#5E5954" font-family="Arial, Helvetica, sans-serif" font-size="13">Tanke · 5 mins to campus</text>
+    <text x="582" y="760" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">₦250,000</text>
+    <text x="582" y="788" fill="#6F6963" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2">PER YEAR</text>
+  </g>
+
+  <g>
+    <rect x="1036" y="398" width="430" height="440" rx="18" fill="url(#fanecto-card)" stroke="#D7D0C4"/>
+    <rect x="1036" y="398" width="430" height="220" fill="#D1C9BF"/>
+    <rect x="1066" y="428" width="104" height="28" rx="14" fill="#121212"/>
+    <text x="1088" y="446" fill="#F5F1EA" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">VERIFIED</text>
+    <rect x="1056" y="668" width="180" height="12" rx="6" fill="#D0C8BE"/>
+    <rect x="1056" y="692" width="240" height="12" rx="6" fill="#D0C8BE"/>
+    <text x="1058" y="625" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">3 Bedroom Shared</text>
+    <text x="1058" y="650" fill="#5E5954" font-family="Arial, Helvetica, sans-serif" font-size="13">Malete · Quiet block</text>
+    <text x="1058" y="760" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">₦750,000</text>
+    <text x="1058" y="788" fill="#6F6963" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2">PER YEAR</text>
+  </g>
+</svg>
