@@ -12,37 +12,10 @@ function isActive(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-function localTimeLabel() {
-  try {
-    const now = new Date();
-    const time = new Intl.DateTimeFormat("en-GB", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-      timeZone: "Africa/Lagos",
-    }).format(now);
-    const hour = Number(
-      new Intl.DateTimeFormat("en-GB", {
-        hour: "numeric",
-        hour12: false,
-        timeZone: "Africa/Lagos",
-      }).format(now),
-    );
-    const greeting =
-      hour < 12 ? "GOOD MORNING" : hour < 17 ? "GOOD AFTERNOON" : "GOOD EVENING";
-    return `${greeting} — LAGOS, NIGERIA IS ${time}`;
-  } catch {
-    return `${site.location.toUpperCase()} · ${site.year}`;
-  }
-}
-
 export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [timeLabel, setTimeLabel] = useState(
-    `${site.location.toUpperCase()} · ${site.year}`,
-  );
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -57,16 +30,12 @@ export function SiteHeader() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    document.body.classList.toggle("menu-open", open);
     return () => {
       document.body.style.overflow = "";
+      document.body.classList.remove("menu-open");
     };
   }, [open]);
-
-  useEffect(() => {
-    setTimeLabel(localTimeLabel());
-    const id = window.setInterval(() => setTimeLabel(localTimeLabel()), 30_000);
-    return () => window.clearInterval(id);
-  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -152,7 +121,7 @@ export function SiteHeader() {
       <div
         id="site-menu"
         className={cn(
-          "fixed inset-0 z-[90] flex flex-col bg-black text-white transition-[opacity,visibility] duration-500 ease-out",
+          "mobile-menu-overlay fixed inset-0 z-[90] flex flex-col overflow-hidden bg-[#090909]/80 text-white backdrop-blur-md transition-[opacity,visibility] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:hidden",
           open
             ? "visible opacity-100"
             : "invisible pointer-events-none opacity-0",
@@ -162,9 +131,35 @@ export function SiteHeader() {
         aria-label="Navigation"
         aria-hidden={!open}
       >
-        <div className="h-16 md:h-[4.5rem]" aria-hidden="true" />
+        <div
+          className={cn(
+            "absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.12),_transparent_40%),linear-gradient(135deg,rgba(27,9,15,0.92),rgba(11,11,11,0.86))] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+            open ? "scale-100 opacity-100" : "scale-[1.08] opacity-0",
+          )}
+        />
 
-        <nav className="page-wrap flex flex-1 flex-col justify-center gap-1 pb-8 pt-4 md:gap-2">
+        <div className="relative flex h-16 items-start justify-between px-[var(--spacing-page)] pt-4">
+          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-white/45">
+            Michael Anyanwu · Software Engineer
+          </p>
+
+          <button
+            type="button"
+            className={cn(
+              "group inline-flex items-center gap-2 text-[0.62rem] uppercase tracking-[0.24em] text-white/70 transition-all duration-300 hover:text-white",
+              open ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0",
+            )}
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+          >
+            <span className="font-medium">Close</span>
+            <span className="h-px w-7 bg-white/40 transition-all duration-300 group-hover:w-9" />
+          </button>
+        </div>
+
+        <div className="relative h-4 md:h-[4.5rem]" aria-hidden="true" />
+
+        <nav className={cn("page-wrap relative flex flex-1 flex-col justify-center gap-1 pb-8 pt-4 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:gap-2", open ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0")}>
           {navItems.map((item, i) => {
             const active = isActive(pathname, item.href);
             return (
@@ -173,11 +168,11 @@ export function SiteHeader() {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "menu-link group block w-fit py-1 font-[family-name:var(--font-display)] text-[clamp(2.75rem,8vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-white transition-opacity duration-300",
-                  open ? "opacity-100" : "opacity-0",
+                  "menu-link group block w-fit py-1 font-[family-name:var(--font-display)] text-[clamp(2.75rem,8vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-white transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+                  open ? "translate-x-0 opacity-100" : "-translate-x-6 opacity-0",
                 )}
                 style={{
-                  transitionDelay: open ? `${80 + i * 55}ms` : "0ms",
+                  transitionDelay: open ? `${100 + i * 70}ms` : "0ms",
                 }}
                 onClick={() => setOpen(false)}
               >
@@ -189,14 +184,6 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="page-wrap flex flex-col gap-3 border-t border-white/10 py-6 md:flex-row md:items-center md:justify-between">
-          <p className="text-[0.65rem] uppercase tracking-[0.16em] text-white/45">
-            {timeLabel}
-          </p>
-          <p className="text-[0.65rem] uppercase tracking-[0.16em] text-white/45">
-            {site.name} · {site.roles[0]}
-          </p>
-        </div>
       </div>
     </>
   );

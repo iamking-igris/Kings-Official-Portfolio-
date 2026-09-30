@@ -50,6 +50,13 @@
     color: var(--color-ink);
     min-height: 100svh;
     overflow-x: hidden;
+    transition: filter 0.45s var(--ease-out), transform 0.45s var(--ease-out);
+  }
+
+  body.menu-open > *:not(#site-menu) {
+    filter: blur(4px) saturate(0.7) brightness(0.78);
+    transform: scale(0.985);
+    transition: filter 0.45s var(--ease-out), transform 0.45s var(--ease-out);
   }
 
   body.has-cursor { cursor: none; }
