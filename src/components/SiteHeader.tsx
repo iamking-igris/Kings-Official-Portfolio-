@@ -112,10 +112,31 @@ export function SiteHeader() {
             </span>
           </Link>
 
+          <nav className="hidden items-center gap-6 md:flex">
+            {navItems.map((item) => {
+              const active = isActive(pathname, item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "text-[0.68rem] uppercase tracking-[0.18em] transition-colors",
+                    active
+                      ? "text-[var(--color-ink)]"
+                      : "text-[var(--color-muted)] hover:text-[var(--color-ink)]",
+                  )}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+
           <button
             type="button"
             className={cn(
-              "relative z-[100] min-h-11 min-w-11 px-2 text-[0.72rem] uppercase tracking-[0.22em]",
+              "relative z-[100] min-h-11 min-w-11 px-2 text-[0.72rem] uppercase tracking-[0.22em] md:hidden",
               open ? "text-white" : "text-[var(--color-ink)]",
             )}
             aria-label={open ? "Close menu" : "Open menu"}
