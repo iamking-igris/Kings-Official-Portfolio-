@@ -9,14 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^15.2.6",
+    "next": "15.2.6",
     "react": "^19.0.0",
-<<<<<<< HEAD
-    "react-dom": "^19.0.0",
-    "next": "15.2.6"
-=======
     "react-dom": "^19.0.0"
->>>>>>> dd376df (Upgrade Next.js to 15.2.6)
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,13 +20,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-<<<<<<< HEAD
     "eslint-config-next": "15.2.6",
-    "@eslint/eslintrc": "^3"
-=======
-    "eslint-config-next": "^15.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
->>>>>>> dd376df (Upgrade Next.js to 15.2.6)
   }
 }
