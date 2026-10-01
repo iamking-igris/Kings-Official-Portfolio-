@@ -28,13 +28,15 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: site.title,
     description: site.description,
+    images: ["/social-preview.png"],
   },
   robots: { index: true, follow: true },
   icons: {
     icon: [
+      { url: "/favicon-256.png", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-256.png", type: "image/png" },
     ],
@@ -48,6 +50,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="antialiased">
       <head>
+        <link rel="icon" href="/favicon-256.png" />
+        <meta name="theme-color" content="#f3f1ec" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

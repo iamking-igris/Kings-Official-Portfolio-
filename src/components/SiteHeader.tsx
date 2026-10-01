@@ -16,6 +16,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [time, setTime] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -45,6 +46,19 @@ export function SiteHeader() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
+
+  useEffect(() => {
+    const format = () =>
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Africa/Lagos",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      }).format(new Date());
+    setTime(format());
+    const id = window.setInterval(() => setTime(format()), 30_000);
+    return () => window.clearInterval(id);
+  }, []);
 
   return (
     <>
@@ -183,6 +197,14 @@ export function SiteHeader() {
             );
           })}
         </nav>
+
+        <div className="page-wrap mt-auto mb-6 flex w-full items-end justify-between px-[var(--spacing-page)]">
+          <p className="text-[0.7rem] uppercase tracking-[0.12em] text-white/60">
+            {`Good ${+time.split(":")[0] < 12 ? "Morning" : +time.split(":")[0] < 18 ? "Afternoon" : "Evening"} ${"Lagos, Nigeria"}`}
+          </p>
+
+          <p className="text-[0.7rem] uppercase tracking-[0.12em] text-white/60">{time}</p>
+        </div>
 
       </div>
     </>

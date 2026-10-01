@@ -45,17 +45,7 @@ export function SiteFooter({ invert = false }: { invert?: boolean }) {
             </div>
           </div>
 
-          <nav aria-label="Footer" className="flex flex-col gap-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm uppercase tracking-[0.12em]"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          {/* Footer nav intentionally removed per request */}
 
           <div className="flex flex-col gap-6 md:items-end">
             <ul className="flex flex-wrap gap-x-5 gap-y-3 md:justify-end">
