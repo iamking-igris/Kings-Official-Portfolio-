@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { KingMark } from "@/components/KingMark";
-import { navItems, site } from "@/data/site";
+import { site } from "@/data/site";
 import { socials } from "@/data/socials";
 import { cn } from "@/lib/utils";
 
