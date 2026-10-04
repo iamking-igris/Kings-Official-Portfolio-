@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michaelanyanwu.cv/sitemap.xml
+Sitemap: https://michaelanyanwu.name.ng/sitemap.xml
