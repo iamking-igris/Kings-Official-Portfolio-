@@ -4,7 +4,7 @@ export const site = {
   title: "Michael Anyanwu — Software Engineer, Product Builder, Founder",
   description:
     "Michael Anyanwu is a software engineer, product builder, and founder based in Lagos. He builds software, products, and systems — through IGRIS Tech and client work.",
-  url: "https://michaelanyanwu.com",
+  url: "https://michaelanyanwu.name.ng",
   location: "Lagos, Nigeria",
   year: "2026",
   roles: ["Software Engineer", "Product Builder", "Founder"] as const,
